@@ -1,21 +1,14 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-long long n;
+double s1,s2,s3;
 long long a, b, c;
 int main() 
 {
-    //freopen("HHCN.inp","r",stdin);
-    //freopen("HHCN.out","w",stdout);
-    cin >> n;
-    for (a = 1; a * a <= n; a++) 
-    {
-        if (n % a == 0) {
-            b = n / a;
-            c = n / b;
-            break;
-        }
-    }
-    long long kq = 4 * (a + b + c);
-    cout << kq;
-    return 0;
+    freopen("HHCN.inp","r",stdin);
+    freopen("HHCN.out","w",stdout);
+    cin >> a >> b >> c;
+    s1=sqrt(a*b/c);
+    s2=sqrt(a*c/b);
+    s3=sqrt(b*c/a);
+    cout<<s1*4+s2*4+s3*4;
 }
