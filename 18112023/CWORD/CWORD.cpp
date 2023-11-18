@@ -33,8 +33,8 @@ int ans(string s)
 string s;
 int main()
 {
-    // freopen("CWORD.inp","r",stdin);
-    // freopen("CWORD.out","w",stdout);
+    freopen("CWORD.inp","r",stdin);
+    freopen("CWORD.out","w",stdout);
     getline(cin, s);
     cout << ans(s);
     return 0;
