@@ -19,12 +19,17 @@ int main()
         }
     }
     for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= S; j++) {
-        if (j % a[i - 1] == 0) {
-            dp[i][j] = j / a[i - 1];
-        } else {
-            dp[i][j] = min(dp[i - 1][j], dp[i][j - a[i - 1]] + 1);
-        }
+        for (int j = 1; j <= S; j++) 
+        {
+            if (j % a[i - 1] == 0) 
+            {
+                dp[i][j] = j / a[i - 1];
+            } 
+        else 
+            {
+                dp[i][j] = min(dp[i - 1][j], (dp[i][j - a[i - 1]]+1));
+                
+            }
         }
     }
     cout<<dp[n][S];
