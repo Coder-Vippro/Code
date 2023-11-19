@@ -17,5 +17,6 @@
             "intelliSenseMode": "linux-gcc-x64"
         }
     ],
+    "clang-format.executable": "/absolute/path/to/clang-format",
     "version": 4
 }
