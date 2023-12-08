@@ -1,31 +1,19 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-int solve(vector<int> a) {
-  int max_life = 0, cur_life = 0;
-  for (int a_i : a) {
-    if (cur_life >= 0) {
-      max_life = max(max_life, cur_life);
-    } else {
-      cur_life = 0;
+#include <bits/stdc++.h> 
+using namespace std; 
+int i;
+int tong=0;
+int main()
+{
+    cin>>i;
+    int scs = int(log10(i)) + 1;
+    int k = i;
+    int dem = 0;
+    while (i > 0)
+    {
+        dem += pow(i % 10, scs);
+        i /= 10;
     }
-    cur_life += a_i;
-  }
-
-  return max_life;
-}
-int main() {
-  int n;
-  cin >> n;
-  vector<int> a(n);
-  for (int i = 0; i < n; i++) {
-    cin >> a[i];
-  }
-
-  int max_life = solve(a);
-  cout << max_life << endl;
-
-  return 0;
+    if (dem == k)
+        return 1;
+    return 0;
 }
