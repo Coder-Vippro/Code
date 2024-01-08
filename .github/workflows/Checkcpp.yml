@@ -20,7 +20,7 @@ jobs:
           max_ctu_depth: 10
           platform: win32W
           std: c++17
-          output_file: ./report/report.txt
+          output_file: ./.github/report/report.txt
     
 
       - name: publish report    
