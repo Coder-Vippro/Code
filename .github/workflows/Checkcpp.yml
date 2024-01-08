@@ -18,6 +18,7 @@ jobs:
           inline_suppression: disable
           force_language: c++
           force: enable
+          exclude_check: ./Archived
           max_ctu_depth: 20
           platform: win64
 

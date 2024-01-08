@@ -1,0 +1,1 @@
+bool kt(int n)
