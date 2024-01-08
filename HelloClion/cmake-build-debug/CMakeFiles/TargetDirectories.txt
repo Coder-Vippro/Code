@@ -1,3 +1,0 @@
-D:/2023/HelloClion/cmake-build-debug/CMakeFiles/HelloClion.dir
-D:/2023/HelloClion/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/2023/HelloClion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

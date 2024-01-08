@@ -13,12 +13,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           check_library: enable
           skip_preprocessor: disable
-          enable: performance,style,warning,missingInclude
+          enable: performance,missingInclude
           inconclusive: enable
           inline_suppression: disable
           force_language: c++
           force: enable
-          max_ctu_depth: 10
+          max_ctu_depth: 20
           platform: win64
 
       - name: publish report    

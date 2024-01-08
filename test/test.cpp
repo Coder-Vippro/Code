@@ -1,35 +1,42 @@
 #include <iostream>
+#include <cmath>
+#include <Windows.h>
 
-using namespace std;
+void drawHeart() {
+    const int width = 40;
+    const int height = 20;
+    const char heartSymbol = '*';
+
+    for (int y = 0; y < height; ++y) {
+        for (int x = 0; x < width; ++x) {
+            float distX = std::abs(x - width / 2.0f);
+            float distY = std::abs(y - height / 2.0f - 4.0f);
+
+            float boundary = 0.25f * (distX + distY);
+
+            if (boundary > 7 - y) {
+                std::cout << " ";
+            } else {
+                std::cout << heartSymbol;
+            }
+        }
+        std::cout << std::endl;
+    }
+}
 
 int main() {
-  int n;
-  cin >> n;
+    system("cls");  // Clear console screen
 
-  for (int i = 0; i < n; i++) {
-    int a;
-    cin >> a;
+    drawHeart();
 
-    int x = 1;
-    while (x <= 10) {
-      int sum = 0;
-      while (x > 0) {
-        sum += x % 10;
-        x /= 10;
-      }
+    // Move cursor to print text inside the heart
+    COORD pos;
+    pos.X = 15;
+    pos.Y = 10;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 
-      if (sum * x == a) {
-        cout << x << endl;
-        break;
-      }
+    // Print text inside the heart
+    std::cout << "Anh yêu em" << std::endl;
 
-      x++;
-    }
-
-    if (x > 10) {
-      cout << -1 << endl;
-    }
-  }
-
-  return 0;
+    return 0;
 }
