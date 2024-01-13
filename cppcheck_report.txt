@@ -25,7 +25,7 @@ Main-Workspace/12012024/CHONBI/CHONBI.cpp:10:15: information: --check-library: T
 Main-Workspace/12012024/CHONDOI/CHONDOI.cpp:29:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
-Main-Workspace/12012024/DAYDEP/DAYDEP.cpp:13:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+Main-Workspace/12012024/DAYDEP/DAYDEP.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 Main-Workspace/12012024/QUA/QUA.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
@@ -34,6 +34,9 @@ Main-Workspace/12012024/QUA/QUA.cpp:28:15: information: --check-library: There i
 Main-Workspace/12092023/lap2/UCLN/UCLN.cpp:12:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
     cout<<__gcd(n,m);
           ^
+Main-Workspace/13012024/MUAVE/MUAVE.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 Main-Workspace/16112023/year/year.cpp:22:22: information: --check-library: There is no matching configuration for function to_string() [checkLibraryFunction]
         string nam = to_string(n);
                      ^
