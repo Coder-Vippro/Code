@@ -12,9 +12,9 @@ int main()
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
     cin>>n;
     for(int i=1;i<=n;i++)cin>>a[i];
-    for(int i=n;i>2;i--)tong2+=a[i];
-    tong1=a[1];
-    for(int i=2;i<n;i++)
+    for(int i=n;i>1;i--)tong2+=a[i];
+    tong1=0;
+    for(int i=1;i<n;i++)
     {
         minn=min(abs(tong1-tong2),minn);
         tong1+=a[i];
