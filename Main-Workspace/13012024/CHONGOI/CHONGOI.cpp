@@ -22,14 +22,13 @@ int main()
             {
                 p[n-h]=n-i+1;
                 p[i]=n-i-1;
-                h++;
             }
             else if(p[i-1]%2==1)
             {
                 p[i]=i-1;
                 p[n-h]=i+1;
-                
             }
+            h++;
         }
     }
     for(int i=1;i<=n;i++)cout<<p[i]<<' ';
