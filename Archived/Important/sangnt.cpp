@@ -3,9 +3,9 @@
 using namespace std;
 int p[N+2];
 int n;
-void sangngto (int n) //sang nguyen to
+void sangngto (int n) 
 {
-    fill(p,p+n+1,1); //phu toan bo mang p voi gia tri 
+    fill(p,p+n+1,1); 
     p[0]=p[1]=0;
     for(int i=2;i*i<=n;i++)
     {
