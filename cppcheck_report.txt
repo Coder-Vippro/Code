@@ -40,10 +40,25 @@ Main-Workspace/13012024/MUAVE/MUAVE.cpp:12:15: information: --check-library: The
 Main-Workspace/16112023/year/year.cpp:22:22: information: --check-library: There is no matching configuration for function to_string() [checkLibraryFunction]
         string nam = to_string(n);
                      ^
+Main-Workspace/17012024/MUAHOA/MUAHOA.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/18012024/GHH/GHH.cpp:24:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/18012024/SDB/SDB.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/18012024/TROCHOI/TROCHOI.cpp:20:13: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+  ios_base::sync_with_stdio(false);
+            ^
 Main-Workspace/2122023/BO3SO/BO3SO.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 Main-Workspace/2122023/SOCP/SOCP.cpp:14:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/22012024/SIEUNT/SIEUNT.cpp:34:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 Main-Workspace/271023/BOBASO/BOBASO.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
