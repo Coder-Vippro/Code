@@ -13,6 +13,12 @@ Main-Workspace/10012024/UOC/UOC.cpp:27:15: information: --check-library: There i
 Main-Workspace/10012024/UOC/UOC.cpp:29:24: information: --check-library: Function uoc_nguyen_duong() should have <noreturn> configuration [checkLibraryNoReturn]
     uoc_nguyen_duong(n);
                        ^
+Main-Workspace/10032024/gtlk/gtlk.cpp:22:25: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+            dem=max(dem,__gcd(a[i],a[j]));
+                        ^
+Main-Workspace/10032024/tinhieucanhbao/tinhieucanhbao.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 Main-Workspace/11012024/DAUTHAU/DAUTHAU.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
@@ -61,6 +67,12 @@ Main-Workspace/2122023/SOCP/SOCP.cpp:14:15: information: --check-library: There 
 Main-Workspace/22012024/SIEUNT/SIEUNT.cpp:34:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
+Main-Workspace/23022024/NTMAX.cpp:26:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/23022024/UCLN.cpp:9:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+    cout<<__gcd(a,b);
+          ^
 Main-Workspace/271023/BOBASO/BOBASO.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);
               ^
