@@ -1,3 +1,9 @@
+ICT-HUE2024/B1/CppBackup.cpp:1:1: error: syntax error [syntaxError]
+1
+^
+ICT-HUE2024/B1/b12.cpp:21:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 Main-Workspace/08012024/CHUSONT/CHUSONT.cpp:22:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);
               ^
