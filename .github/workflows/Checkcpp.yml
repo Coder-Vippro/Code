@@ -1,29 +1,24 @@
-name: cppcheck-action
-on: [push]
+name: C++ Lint
+
+on: [push, pull_request]
 
 jobs:
-  build:
-    name: cppcheck
+  cpp-lint:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: cppcheck
-        uses: deep5050/cppcheck-action@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
-          check_library: enable
-          skip_preprocessor: disable
-          enable: performance,missingInclude
-          inconclusive: enable
-          inline_suppression: disable
-          force_language: c++
-          force: enable
-          exclude_check: ./Archived
-          max_ctu_depth: 20
-          platform: win64
 
-      - name: publish report    
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'master' # your branch name goes here
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v3
+
+    - name: Install clang-tidy
+      run: sudo apt-get install -y clang-tidy
+
+    - name: Run clang-tidy
+      run: |
+        find . -name "*.cpp" -not -path "./Archived/*" | xargs clang-tidy --warnings-as-errors='*' > clang-tidy-report.txt
+
+    - name: Upload clang-tidy report
+      uses: actions/upload-artifact@v3
+      with:
+        name: clang-tidy-report
+        path: clang-tidy-report.txt
