@@ -1,0 +1,23 @@
+name: C++ Lint
+
+on: [push, pull_request]
+
+jobs:
+  cpp-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v3
+
+    - name: Install clang-tidy
+      run: sudo apt-get install -y clang-tidy
+
+    - name: Run clang-tidy
+      run: |
+        find . -name "*.cpp" | xargs clang-tidy --warnings-as-errors='*' > clang-tidy-report.txt
+    - name: Upload clang-tidy report
+      uses: actions/upload-artifact@v3
+      with:
+        name: clang-tidy-report
+        path: clang-tidy-report.txt
