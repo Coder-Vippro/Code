@@ -1,3 +1,12 @@
+02072024/CAS/CppBackup.cpp:2:9: error: Unmatched '}'. Configuration: ''. [syntaxError]
+        }
+        ^
+2024/LBC_3A/LBC_3A.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Codeforces/A.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 ICT-HUE2024/B1/CppBackup.cpp:1:1: error: syntax error [syntaxError]
 1
 ^
