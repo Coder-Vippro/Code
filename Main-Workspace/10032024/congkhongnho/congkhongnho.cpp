@@ -1,70 +1,77 @@
 #include <bits/stdc++.h>
 using namespace std;
-string a[100001];
+
+const int MAX_N = 100001;
+vector<string> numbers(MAX_N);
 int n;
-int maxx=-1e9-1;
-bool tong(string x,string k)
-{
-    string kq="";
-    while (k.length()<x.length()) k='0'+k;
-    while (k.length()>x.length()) x='0'+x;
-    int nho=0,cs1,cs2,cs;
-    for(int i=k.length()-1;i>=0;i--)
-    {
-        cs1=x[i]-48;
-        cs2=k[i]-48;
-        cs=(cs1+cs2+nho);
-        nho=cs/10;cs=cs%10;
-        if(nho>0)return false;
-        kq=char(cs+48)+kq;
+
+bool canAdd(const string& x, const string& y) {
+    int carry = 0;
+    int i = x.length() - 1;
+    int j = y.length() - 1;
+
+    while (i >= 0 || j >= 0) {
+        int sum = carry;
+        if (i >= 0) sum += x[i] - '0';
+        if (j >= 0) sum += y[j] - '0';
+        
+        if (sum > 9) return false;
+        carry = sum / 10;
+        i--; j--;
     }
-    if(nho>0) return false;
-    return true;
+
+    return carry == 0;
 }
-string tong1(string x,string k)
-{
-    string kq="";
-    while (k.length()<x.length()) k='0'+k;
-    while (k.length()>x.length()) x='0'+x;
-    int nho=0,cs1,cs2,cs;
-    for(int i=k.length()-1;i>=0;i--)
-    {
-        cs1=x[i]-48;
-        cs2=k[i]-48;
-        cs=(cs1+cs2+nho);
-        nho=cs/10;cs=cs%10;
-        kq=char(cs+48)+kq;
+
+string add(const string& x, const string& y) {
+    string result;
+    int carry = 0;
+    int i = x.length() - 1;
+    int j = y.length() - 1;
+
+    while (i >= 0 || j >= 0 || carry) {
+        int sum = carry;
+        if (i >= 0) sum += x[i] - '0';
+        if (j >= 0) sum += y[j] - '0';
+        
+        result.push_back(sum % 10 + '0');
+        carry = sum / 10;
+        i--; j--;
     }
-    if(nho>0) kq='1'+kq;
-    return kq;
+
+    reverse(result.begin(), result.end());
+    return result;
 }
-string tmp="";
-int dem=0;
-bool kt=true;
-vector <string> p;
-int main()
-{
-    cin>>n;
-    for(int i=1;i<=n;i++)
-    {
-        cin>>a[i];
-    }
-    for(int i=1;i<=n;i++)
-    {
-        tmp=a[i];
-        for(int j=1;j<=n;j++)
-        {
-            if(j!=i && tong(tmp,a[j])==true)
-            {
-                tmp=tong1(tmp,a[j]);
-                dem++;
+
+int findMaxChain() {
+    int maxChain = 0;
+
+    for (int i = 0; i < n; i++) {
+        string current = numbers[i];
+        int chainLength = 1;
+
+        for (int j = 0; j < n; j++) {
+            if (i != j && canAdd(current, numbers[j])) {
+                current = add(current, numbers[j]);
+                chainLength++;
             }
         }
-        if(dem>maxx && dem>=0){maxx=dem;kt=true;}
-        dem=0;
+
+        maxChain = max(maxChain, chainLength);
     }
-    if(kt==true)maxx++;
-    if(maxx>=0)
-    cout<<maxx;
-    else cout<<0;
+
+    return maxChain;
+}
+
+int main() {
+    cin >> n;
+    numbers.resize(n);
+    
+    for (int i = 0; i < n; i++) {
+        cin >> numbers[i];
+    }
+
+    int result = findMaxChain();
+    cout << result << endl;
+    return 0;
 }
