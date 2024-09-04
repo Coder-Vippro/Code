@@ -11,5 +11,5 @@ int main()
         cin>>x>>y;
         cout<<min(x,y)<<' '<<max(x,y)<<'\n';
     }
-    
+    return 0;
 }
