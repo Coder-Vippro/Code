@@ -4,7 +4,7 @@ on: [push]
 jobs:
   build:
     name: cppcheck
-    runs-on: self-hosted
+    runs-on: ubuntu-lastest
     steps:
       - uses: actions/checkout@v4
       - name: cppcheck
