@@ -1,24 +1,75 @@
-name: C++ Lint
+name: C++ Linter
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - '**.cpp'
+  pull_request:
+    paths:
+      - '**.cpp'
+  workflow_dispatch:
 
 jobs:
-  cpp-lint:
+  cpp-linter:
+    name: cpp-linter
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out the repository
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install clang-tidy
-      run: sudo apt-get install -y clang-tidy
+      - name: Check for first run flag
+        id: check_files
+        run: |
+          if [ ! -f .github/.cpp-linter-first-run ]; then
+            echo "first_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "first_run=false" >> $GITHUB_OUTPUT
+          fi
 
-    - name: Run clang-tidy
-      run: |
-        find . -name "*.cpp" -not -path "./Archived/*" | xargs clang-tidy --warnings-as-errors='*' > clang-tidy-report.txt
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v39
+        with:
+          files: |
+            **/*.cpp
+          files_ignore: |
+            Archived/**/*.cpp
 
-    - name: Upload clang-tidy report
-      uses: actions/upload-artifact@v3
-      with:
-        name: clang-tidy-report
-        path: clang-tidy-report.txt
+      - name: Run cpp-linter on all files (first run)
+        if: steps.check_files.outputs.first_run == 'true'
+        uses: cpp-linter/cpp-linter-action@v2
+        id: linter-all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          style: file
+          files-changed-only: false
+          ignore: Archived/**/*.cpp
+          
+      - name: Run cpp-linter on changed files (subsequent runs)
+        if: steps.check_files.outputs.first_run == 'false'
+        uses: cpp-linter/cpp-linter-action@v2
+        id: linter-changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          style: file
+          files-changed-only: true
+          ignore: Archived/**/*.cpp
+          files: ${{ steps.changed-files.outputs.all_changed_files }}
+          
+      - name: Create first run flag
+        if: steps.check_files.outputs.first_run == 'true'
+        run: |
+          mkdir -p .github
+          touch .github/.cpp-linter-first-run
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .github/.cpp-linter-first-run
+          git commit -m "Mark first run of cpp-linter"
+          git push
+          
+      - name: Fail fast?!
+        if: (steps.linter-all.outputs.checks-failed > 0 && steps.check_files.outputs.first_run == 'true') || (steps.linter-changed.outputs.checks-failed > 0 && steps.check_files.outputs.first_run == 'false')
+        run: exit 1
