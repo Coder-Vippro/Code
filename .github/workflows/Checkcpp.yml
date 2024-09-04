@@ -16,7 +16,7 @@ jobs:
     name: cpp-linter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -52,7 +52,7 @@ jobs:
           ignore-warnings: false
           database: "linter-database"
           tidy-checks: "*"
-          output-file: linter-output.txt
+          output-file: .github/linter-results/linter-output.txt
           
       - name: Run cpp-linter on changed files (subsequent runs)
         if: steps.check_files.outputs.first_run == 'false'
@@ -69,8 +69,17 @@ jobs:
           ignore-warnings: false
           database: "linter-database"
           tidy-checks: "*"
-          output-file: linter-output.txt
+          output-file: .github/linter-results/linter-output.txt
           
+      - name: Commit linter results
+        run: |
+          mkdir -p .github/linter-results
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .github/linter-results/linter-output.txt
+          git commit -m "Update linter results" || echo "No changes to commit"
+          git push
+
       - name: Create first run flag
         if: steps.check_files.outputs.first_run == 'true'
         run: |
@@ -82,21 +91,15 @@ jobs:
           git commit -m "Mark first run of cpp-linter"
           git push
           
-      - name: Upload linter results
-        uses: actions/upload-artifact@v3
-        with:
-          name: linter-results
-          path: linter-output.txt
-
       - name: Report linter results
         run: |
-          echo "Linter results have been saved to linter-output.txt"
+          echo "Linter results have been saved to .github/linter-results/linter-output.txt"
           echo "Summary of issues found:"
-          cat linter-output.txt | grep -E "error:|warning:" | wc -l
+          cat .github/linter-results/linter-output.txt | grep -E "error:|warning:" | wc -l
           
       - name: Fail if linter found issues (optional)
         if: false  # Set to true if you want the workflow to fail on linter issues
         run: |
-          if [ -s linter-output.txt ]; then
+          if [ -s .github/linter-results/linter-output.txt ]; then
             exit 1
           fi
