@@ -9,7 +9,7 @@ int main()
     while (n--)
     {
         cin>>x>>y;
-        cout<<min(x,y)<<' '<<max(x,y)<<'\n';
+        cout<<-x+y<<'\n';
     }
     return 0;
 }

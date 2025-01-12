@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <cstdio>
 using namespace std;
 string tong(string x,string k)
 {

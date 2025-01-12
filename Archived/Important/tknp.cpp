@@ -55,3 +55,40 @@ int binarySearch(vector<int> tong2, int x) {
         }
         return -1;
 }
+
+int tknplonhonbang(int l,int r, int k)
+{
+    int mid;
+    int result=-1e9;
+    while(l<=r)
+    {
+        mid=(l+r)/2;
+        if(a[mid]>=k)
+        {
+            result=a[mid];
+            r=mid-1;
+        }
+        else 
+        {
+            l=mid+1;
+        }
+    }
+    return result;
+}
+
+int tknpnhohonbang(int l, int r, int k)
+{
+    int result=-1e9;
+    int mid;
+    while(l<=r)
+    {
+        mid=(l+r)/2;
+        if(a[mid]<=k)
+        {
+            result=a[mid];
+            l=mid+1;
+        }
+        else r=mid-1;
+    }
+    return result;
+}
