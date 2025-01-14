@@ -1,9 +1,6 @@
 02072024/CAS/CppBackup.cpp:2:9: error: Unmatched '}'. Configuration: ''. [syntaxError]
         }
         ^
-2024/LBC_3A/LBC_3A.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
-    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-              ^
 2025/07012025/C1/main.cpp:9:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
     int a=__gcd(n,m);
           ^
@@ -22,19 +19,28 @@
 2025/14012025/BOBA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
+2025/ROBOT/ROBOT.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/Solution.cpp:46:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/Solution.cpp:41:29: information: --check-library: Function Back_Track() should have <noreturn> configuration [checkLibraryNoReturn]
+    Back_Track(x + 1, y, p2);  // Đệ quy để tiếp tục khám phá
+                            ^
 2025/TANGDAN/TANGDAN.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
+2025/TOT/TOT.cpp:32:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+2025/TOT/TOT.cpp:51:38: information: --check-library: There is no matching configuration for function std::make_tuple() [checkLibraryFunction]
+                tuple<int,int,int> t=make_tuple(a[i],a[j],b[m]);
+                                     ^
 2025/codedautien/main.cpp:13:3: error: syntax error [syntaxError]
 } while (/* condition */);
   ^
 Codeforces/A.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
-    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-              ^
-ICT-HUE2024/B1/CppBackup.cpp:1:1: error: syntax error [syntaxError]
-1
-^
-ICT-HUE2024/B1/b12.cpp:21:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 Main-Workspace/08012024/CHUSONT/CHUSONT.cpp:22:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
