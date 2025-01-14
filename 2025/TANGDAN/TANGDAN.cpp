@@ -6,8 +6,8 @@ long long dp[1000001];
 int main()
 {
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-    //freopen("TANGDAN.INP","r",stdin);
-    //freopen("TANGDAN.OUT","w",stdout);
+    freopen("TANGDAN.INP","r",stdin);
+    freopen("TANGDAN.OUT","w",stdout);
     cin>>n;
     for(int i=1;i<=n;i++)
     {
