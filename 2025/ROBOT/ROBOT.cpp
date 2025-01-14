@@ -1,6 +1,3 @@
-/*
-just solve the k=2 case
-*/
 #include <bits/stdc++.h>
 using namespace std;
 vector< vector <int> > a;

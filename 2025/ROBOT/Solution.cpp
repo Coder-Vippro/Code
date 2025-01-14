@@ -9,7 +9,7 @@ int n, m, query;
 
 // Ma trận `a` biểu diễn trạng thái của từng ô; 0 là không bị chặn, 1 là bị chặn
 vector< vector<int> > a;
-
+vector< vector <unsigned long long> > dp;
 /*
 Hàm Back_Track:
 - `x`, `y`: vị trí hiện tại trong ma trận
@@ -42,25 +42,60 @@ void Back_Track(int x, int y, vector< pair<int, int> > path) {
 }
 
 int main() {
+
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+    freopen("ROBOT.INP","r",stdin);
+    freopen("ROBOT.OUT","w",stdout);
     // Nhập kích thước ma trận và số truy vấn (chưa dùng `query`)
     cin >> n >> m >> query;
+    if(query==1)
+    {
+        // Khởi tạo ma trận `a` (giá trị mặc định là 0)
+        a.resize(n + 5, vector<int>(m + 5, 0));
 
-    // Khởi tạo ma trận `a` (giá trị mặc định là 0)
-    a.resize(n + 5, vector<int>(m + 5, 0));
+        // Nhập giá trị các ô trong ma trận
+        for (int i = 1; i <= n; i++) 
+            for (int j = 1; j <= m; j++) 
+                cin >> a[i][j];
 
-    // Nhập giá trị các ô trong ma trận
-    for (int i = 1; i <= n; i++) 
-        for (int j = 1; j <= m; j++) 
-            cin >> a[i][j];
+        // Bắt đầu tìm đường từ ô [1, 1], khởi tạo đường đi ban đầu là {{1, 1}}
+        Back_Track(1, 1, {{1, 1}});
 
-    // Bắt đầu tìm đường từ ô [1, 1], khởi tạo đường đi ban đầu là {{1, 1}}
-    Back_Track(1, 1, {{1, 1}});
-
-    // Xuất tất cả các đường đi hợp lệ tìm được
-    for (auto x : res) {           // Với mỗi đường đi trong res
-        for (auto y : x)          // Với mỗi ô (x, y) trong đường đi
-            cout << y.first << y.second << ' ';  // Xuất tọa độ của ô
-        cout << '\n';
+        // Xuất tất cả các đường đi hợp lệ tìm được
+        for (auto x : res) {           // Với mỗi đường đi trong res
+            for (auto y : x)          // Với mỗi ô (x, y) trong đường đi
+                cout << y.first << y.second << ' ';  // Xuất tọa độ của ô
+            cout << '\n';
+        }
+    }
+    //same solution from ROBOT.cpp 
+    else if(query==2)
+    {
+        a.resize(n+1,vector<int> (m+1,0));
+        dp.resize(n+1,vector<unsigned long long> (m+1,0));
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=m;j++)
+            {
+                cin>>a[i][j];
+            }
+        }
+        dp[1][1]=1;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=m;j++)
+            {
+                if(a[i][j]==0)
+                {
+                    dp[i][j]+=dp[i-1][j]+dp[i][j-1];
+                }
+                else
+                {
+                    dp[i][j]=0;
+                }
+            }
+        }
+        cout<<dp[n][m];
     }
     return 0;
 }
@@ -123,6 +158,25 @@ Output:
   - \( 11 21 23 33 \): đi sang phải, xuống, phải, xuống.
   - \( 11 21 33 \): đi sang phải, phải, xuống, xuống.
   - \( 12 12 33 \): đi xuống, phải, xuống, phải.
+
+
+Sample Input 2:
+3 5 1
+0 0 0 0 0
+0 1 1 0 0
+0 1 1 0 0
+Sample Output 2:
+11 12 13 14 15 25 35
+11 12 13 14 24 25 35
+11 12 13 14 24 34 35
+
+Sample Input 3:
+3 5 2
+0 0 0 0 0
+0 1 1 0 0
+0 1 1 0 0
+Sample Output 3:
+3
 
 **Ứng dụng:**
 Chương trình trên có thể ứng dụng để tìm đường đi trong mê cung hoặc các bài toán tương tự như "đếm số cách đi từ A đến B" trong lập trình.
