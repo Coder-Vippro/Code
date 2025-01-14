@@ -29,10 +29,12 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 int n;
-int a[100001];
+long long a[100001];
 long long f[100001];
+long long maxx=-1e9+1;
 int main()
 {
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
     cin>>n;
     for(int i=1;i<=n;i++)
     {
@@ -45,18 +47,14 @@ int main()
         {
             if(a[i]>a[j])
             {
-                f[i]=max(f[i],f[j]+a[i]);
-                
+                f[i]=max(f[i],f[j]+a[i]);  
             }
         }
-    }
-    int maxx=-1e9;
-    for(int i=1;i<=n;i++)
-    {
-        if(f[i]>maxx)maxx=f[i];
-    }
+        maxx=max(maxx,f[i]);
+    }  
     cout<<maxx;
 }
+
 /*
 #include <bits/stdc++.h>
 using namespace std;
