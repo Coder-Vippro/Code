@@ -13,7 +13,16 @@
 2025/07012025/C6/main.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
+2025/09012025/tests/main.cpp:37:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 2025/09012025/tests/main2.cpp:50:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14012025/BOBA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/TANGDAN/TANGDAN.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 2025/codedautien/main.cpp:13:3: error: syntax error [syntaxError]
