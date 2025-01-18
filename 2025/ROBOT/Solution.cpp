@@ -4,11 +4,13 @@ using namespace std;
 // Vector 2D res lưu lại tất cả các đường đi hợp lệ
 vector< vector< pair<int, int> > > res;
 
-// n, m: kích thước ma trận (số hàng, số cột) | query: số truy vấn (không sử dụng trong lời giải hiện tại)
+// n, m: kích thước ma trận (số hàng, số cột) | query: số truy vấn
 int n, m, query;
 
 // Ma trận `a` biểu diễn trạng thái của từng ô; 0 là không bị chặn, 1 là bị chặn
 vector< vector<int> > a;
+
+// Ma trận `dp` lưu số cách đi đến từng ô (x, y) trong ma trận (dành cho truy vấn 2)
 vector< vector <unsigned long long> > dp;
 /*
 Hàm Back_Track:
