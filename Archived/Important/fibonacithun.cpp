@@ -19,7 +19,6 @@ string tong(string x,string k)
 }
 string Fibo(int n)
 {
-   
     string f1="1",f2="1",f3;
     for(int i=3;i<=n;i++)
     {
@@ -30,8 +29,8 @@ string Fibo(int n)
 }
 int main()
 {
-    freopen("fibo.INP","r",stdin);
-    freopen("fibo.OUT","w",stdout);
+    //freopen("fibo.INP","r",stdin);
+    //freopen("fibo.OUT","w",stdout);
     cin>>n;
     for(int i=1;i<=n;i++)
     {

@@ -2,14 +2,16 @@
 using namespace std;
 int n;
 int p[1002];
-void sangnt (int n) 
+void sangnt(int n)
 {
-    fill(p,p+n+1,1); 
+    fill(p,p+n+1,1);
     p[0]=p[1]=0;
-    for(int i=2;i*i<=n;i++)
+    for(int i=2;i<=n;i++)
     {
-        if(p[i]==1)
-        for(int j=i*i;j<=n;j+=i) p[j]=0;
+        if (p[i]==1)
+        {
+            for(int j=i*i;j<=n;j+=i) p[j]=0;
+        }
     }
 }
 bool ans(int n)

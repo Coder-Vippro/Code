@@ -20,7 +20,7 @@ ll quickpow(ll a,ll n)
 }
 bool ans(int len)
 {
-    set<ll>hashes;
+    set<ll> hashes;
     for(int i=1;i+len-1<=n;i++)
     {
         int l=i,r=i+len-1;
@@ -30,6 +30,7 @@ bool ans(int len)
     }
     return true;
 }
+
 int main()
 {
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
