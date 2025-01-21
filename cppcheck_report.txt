@@ -19,13 +19,37 @@
 2025/14012025/BOBA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
-2025/ROBOT/ROBOT.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+2025/16012025/CHAMCAY/CHAMCAY.cpp:49:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
-2025/ROBOT/Solution.cpp:46:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+2025/16012025/CUNGCAP/CUNGCAP.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
-2025/ROBOT/Solution.cpp:41:29: information: --check-library: Function Back_Track() should have <noreturn> configuration [checkLibraryNoReturn]
+2025/16012025/KIEMTRA/KIEMTRA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/16012025/XEPHANG/XEPHANG.cpp:36:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/18012024/union/main.cpp:15:15: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+            s.insert(a);
+              ^
+2025/18012024/union/main.cpp:16:15: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+            s.insert(b);
+              ^
+2025/ROBOT/ROBOT.cpp:33:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/ROBOT.cpp:28:28: information: --check-library: Function solve() should have <noreturn> configuration [checkLibraryNoReturn]
+    if(j<m) solve(i,j+1,kq);
+                           ^
+2025/ROBOT/ROBOT.cpp:29:28: information: --check-library: Function solve() should have <noreturn> configuration [checkLibraryNoReturn]
+    if(i<n) solve(i+1,j,kq);
+                           ^
+2025/ROBOT/Solution.cpp:48:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/Solution.cpp:43:29: information: --check-library: Function Back_Track() should have <noreturn> configuration [checkLibraryNoReturn]
     Back_Track(x + 1, y, p2);  // Đệ quy để tiếp tục khám phá
                             ^
 2025/TANGDAN/TANGDAN.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
@@ -40,6 +64,9 @@
 2025/codedautien/main.cpp:13:3: error: syntax error [syntaxError]
 } while (/* condition */);
   ^
+2025/hashstring/main.cpp:43:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+              ^
 Codeforces/A.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
