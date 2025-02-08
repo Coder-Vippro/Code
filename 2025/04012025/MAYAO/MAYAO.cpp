@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 #define ll unsigned long long 
 using namespace std;
+#pragma GCC optimize("O3")
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC target("avx,avx2,fma")
 ll n,k;
 pair <ll,ll> a[1001];
 bool check(ll day)
