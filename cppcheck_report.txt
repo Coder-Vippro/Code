@@ -223,5 +223,8 @@ Main-Workspace/hsgt122201/hsgt122201.cpp:31:15: information: --check-library: Th
 Main-Workspace/maxval/maxval.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
+veryimportan/uocntnhonhat/uocntnhonhat.cpp:51:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
 
