@@ -11,10 +11,7 @@ int main()
     for(int i=2;i<=15;i++)
     {
         C[i][0]=C[i][i]=1;
-    }        C[i][j]=C[i-1][j-1]+C[i-1][j];
-    for(int z=2;z<=3;z++)
-        for(int y=1;y<=2;y++)
-            for(int x=1;x<=2;x++)
+    }
     for(int i=2;i<=15;i++)
         for(int j=1;j<=i-1;j++)
             C[i][j]=C[i-1][j-1]+C[i-1][j];
