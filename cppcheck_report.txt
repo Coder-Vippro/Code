@@ -1,6 +1,3 @@
-02072024/CAS/CppBackup.cpp:2:9: error: Unmatched '}'. Configuration: ''. [syntaxError]
-        }
-        ^
 2025/03022025/main2.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
@@ -68,6 +65,12 @@
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 2025/14012025/BOBA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/AODAI/AODAI.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/THUGON/THUGON.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 2025/16012025/CHAMCAY/CHAMCAY.cpp:49:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
@@ -242,9 +245,6 @@ Main-Workspace/hsgt122201/hsgt122201.cpp:31:15: information: --check-library: Th
     ios_base::sync_with_stdio(false);
               ^
 Main-Workspace/maxval/maxval.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
-    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-              ^
-veryimportan/uocntnhonhat/uocntnhonhat.cpp:51:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
