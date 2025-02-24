@@ -6,8 +6,8 @@ int maxx=-1e9;
 int main()
 {
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-    //freopen("CAU2.INP","r",stdin);
-    //freopen("CAU2.OUT","w",stdout);
+    freopen("CAU2.INP","r",stdin);
+    freopen("CAU2.OUT","w",stdout);
     cin>>n;
     for(int i=1;i<=n;i++)
     {
@@ -16,7 +16,7 @@ int main()
     }
     for(auto pair:a)
     {
-        cout<<pair.first<<' '<<pair.second<<'\n';
+        //cout<<pair.first<<' '<<pair.second<<'\n';
         if(pair.second>maxx)
         {
             maxx=pair.second;
