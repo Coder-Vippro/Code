@@ -181,7 +181,10 @@
 2025/22022025/KTRA/BAI3/BAI3.cpp:9:10: information: --check-library: There is no matching configuration for function std::ios::sync_with_stdio() [checkLibraryFunction]
     ios::sync_with_stdio(false);
          ^
-2025/22022025/KTRA/BAI3/main.cpp:16:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+2025/22022025/KTRA/BAI3/main.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/main.cpp:40:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
     ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
               ^
 2025/ROBOT/ROBOT.cpp:33:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
