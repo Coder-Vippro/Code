@@ -1,0 +1,356 @@
+2025/03022025/main2.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/03022025/main3.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/03022025/main4.cpp:25:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/MAYAO/MAYAO.cpp:26:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/MAYMAN/MAYMAN.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/NGUYETQUE/NGUYETQUE.cpp:67:10: information: --check-library: There is no matching configuration for function std::ios::sync_with_stdio() [checkLibraryFunction]
+    ios::sync_with_stdio(false);
+         ^
+2025/04012025/test/main.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/test/main2.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/test/main3.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/04012025/test/main5.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/07012025/C1/CAU1.cpp:9:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+    int a=__gcd(n,m);
+          ^
+2025/07012025/C2/CAU2.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/07012025/C6/main.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/07102025/B.cpp:6:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/09012025/tests/main.cpp:37:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/09012025/tests/main2.cpp:50:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/10022025/chiahet/chiahet.cpp:8:26: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+    long long k=a/((b*c)/__gcd(b,c));
+                         ^
+2025/10022025/sghh/sghh.cpp:21:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/12022025/CHONBI/CHONBI.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/12022025/DAYDEP/DAYDEP.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/12022025/SDB/SDB.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/12022025/TANGQUA/TANGQUA.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/12022025/TROCHOI/TROCHOI.cpp:21:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14012025/BOBA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/AODAI/AODAI.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/Fibi/main.cpp:47:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/HUYENDIEU/main.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/THUGON/THUGON.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/test/CANDIES.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/test/EQLARRAY.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/test/MARIO.cpp:7:10: information: --check-library: There is no matching configuration for function std::ios::sync_with_stdio() [checkLibraryFunction]
+    ios::sync_with_stdio(0);
+         ^
+2025/14022025/test/MATMA.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/14022025/test/main.cpp:13:17: information: --check-library: There is no matching configuration for function std::priority_queue::push() [checkLibraryFunction]
+        minHeap.push(stones);
+                ^
+2025/14022025/test/main.cpp:27:17: information: --check-library: There is no matching configuration for function std::priority_queue::push() [checkLibraryFunction]
+        minHeap.push(mergeCost);
+                ^
+2025/16012025/CHAMCAY/CHAMCAY.cpp:49:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/16012025/CUNGCAP/CUNGCAP.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/16012025/KIEMTRA/KIEMTRA.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/16012025/XEPHANG/XEPHANG.cpp:36:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/18012024/union/main.cpp:15:15: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+            s.insert(a);
+              ^
+2025/18012024/union/main.cpp:16:15: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+            s.insert(b);
+              ^
+2025/19022025/BAI2/BAI2.cpp:37:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/19022025/BAI4/BAI4.cpp:11:8: information: --check-library: There is no matching configuration for function std::priority_queue::push() [checkLibraryFunction]
+    pq.push(1);
+       ^
+2025/19022025/BAI4/BAI4.cpp:12:10: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+    seen.insert(1);
+         ^
+2025/19022025/BAI4/BAI4.cpp:25:20: information: --check-library: There is no matching configuration for function std::priority_queue::push() [checkLibraryFunction]
+                pq.push(next_num);
+                   ^
+2025/19022025/BAI4/BAI4.cpp:26:22: information: --check-library: There is no matching configuration for function std::unordered_set::insert() [checkLibraryFunction]
+                seen.insert(next_num);
+                     ^
+2025/19022025/BAI4/BAI4.cpp:32:10: information: --check-library: There is no matching configuration for function std::ios::sync_with_stdio() [checkLibraryFunction]
+    ios::sync_with_stdio(false);
+         ^
+2025/19022025/BAI4/BAI4.cpp:44:27: information: --check-library: There is no matching configuration for function std::unordered_map::count() [checkLibraryFunction]
+        if (hamming_index.count(x))
+                          ^
+2025/19022025/BAI5/BAI5.cpp:35:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/21022025/BAI1/BAI1.cpp:23:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/21022025/BAI2/BAI2.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/21022025/BAI3/BAI3.cpp:25:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/21022025/BAI5/BAI5.cpp:24:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/BAI1/BAI1.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/BAI2/BAI2.cpp:44:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/BAI2/BAI2.cpp:48:11: information: --check-library: Function ans() should have <noreturn> configuration [checkLibraryNoReturn]
+    ans(s);
+          ^
+2025/22022025/KTRA/BAI1/main.cpp:64:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/KTRA/BAI2/BAI2.cpp:19:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/KTRA/BAI3/BAI3.cpp:9:10: information: --check-library: There is no matching configuration for function std::ios::sync_with_stdio() [checkLibraryFunction]
+    ios::sync_with_stdio(false);
+         ^
+2025/22022025/KTRA/BAI3/main.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/22022025/main.cpp:40:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/30102025/Sort/main.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/ROBOT.cpp:33:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/ROBOT.cpp:28:28: information: --check-library: Function solve() should have <noreturn> configuration [checkLibraryNoReturn]
+    if(j<m) solve(i,j+1,kq);
+                           ^
+2025/ROBOT/ROBOT.cpp:29:28: information: --check-library: Function solve() should have <noreturn> configuration [checkLibraryNoReturn]
+    if(i<n) solve(i+1,j,kq);
+                           ^
+2025/ROBOT/Solution.cpp:48:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/ROBOT/Solution.cpp:43:29: information: --check-library: Function Back_Track() should have <noreturn> configuration [checkLibraryNoReturn]
+    Back_Track(x + 1, y, p2);  // Đệ quy để tiếp tục khám phá
+                            ^
+2025/TANGDAN/TANGDAN.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+2025/TOT/TOT.cpp:32:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+2025/TOT/TOT.cpp:51:38: information: --check-library: There is no matching configuration for function std::make_tuple() [checkLibraryFunction]
+                tuple<int,int,int> t=make_tuple(a[i],a[j],b[m]);
+                                     ^
+2025/codedautien/main.cpp:13:3: error: syntax error [syntaxError]
+} while (/* condition */);
+  ^
+2025/hashstring/main.cpp:43:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+              ^
+Codeforces/A.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+HUEICT/BAI1/main.cpp:7:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/08012024/CHUSONT/CHUSONT.cpp:22:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/08012024/DOIBAN/DOIBAN.cpp:35:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/10012024/DOANNT/DOANNT.cpp:22:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/10012024/UOC/UOC.cpp:27:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/10012024/UOC/UOC.cpp:29:24: information: --check-library: Function uoc_nguyen_duong() should have <noreturn> configuration [checkLibraryNoReturn]
+    uoc_nguyen_duong(n);
+                       ^
+Main-Workspace/10032024/gtlk/gtlk.cpp:22:25: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+            dem=max(dem,__gcd(a[i],a[j]));
+                        ^
+Main-Workspace/10032024/tinhieucanhbao/tinhieucanhbao.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/11012024/DAUTHAU/DAUTHAU.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/11012024/TTHUONG/TTHUONG.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/12012024/CHONBI/CHONBI.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/12012024/CHONDOI/CHONDOI.cpp:29:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/12012024/DAYDEP/DAYDEP.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/12012024/QUA/QUA.cpp:28:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/12092023/lap2/UCLN/UCLN.cpp:12:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+    cout<<__gcd(n,m);
+          ^
+Main-Workspace/13012024/MUAVE/MUAVE.cpp:12:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/16112023/year/year.cpp:22:22: information: --check-library: There is no matching configuration for function to_string() [checkLibraryFunction]
+        string nam = to_string(n);
+                     ^
+Main-Workspace/17012024/MUAHOA/MUAHOA.cpp:11:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/18012024/GHH/GHH.cpp:24:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/18012024/SDB/SDB.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/18012024/TROCHOI/TROCHOI.cpp:20:13: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+  ios_base::sync_with_stdio(false);
+            ^
+Main-Workspace/2122023/BO3SO/BO3SO.cpp:8:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/2122023/SOCP/SOCP.cpp:14:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/22012024/SIEUNT/SIEUNT.cpp:34:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/23022024/NTMAX.cpp:26:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/23022024/UCLN.cpp:9:11: information: --check-library: There is no matching configuration for function __gcd() [checkLibraryFunction]
+    cout<<__gcd(a,b);
+          ^
+Main-Workspace/271023/BOBASO/BOBASO.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/271023/QA/BOBASO.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/29092024/CppBackup.cpp:1:5: error: Unmatched ')'. Configuration: ''. [syntaxError]
+;i++)
+    ^
+Main-Workspace/29092024/xauht.cpp:37:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/7122023/Question_3/Question_3.cpp:5:25: error: Invalid log10() argument nr 1. The value is 0 but the valid values are '4.94066e-324:'. [invalidFunctionArg]
+    int scs = int(log10(i)) + 1;
+                        ^
+Main-Workspace/7122023/Question_3/Question_3.cpp:24:16: note: Calling function 'kt', 1st argument 'i' value is 0
+        if (kt(i) == true)
+               ^
+Main-Workspace/7122023/Question_3/Question_3.cpp:5:25: note: Invalid argument
+    int scs = int(log10(i)) + 1;
+                        ^
+Main-Workspace/BONUS/BONUS.cpp:7:11: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+ios_base::sync_with_stdio(0); cin.tie(0);     cout.tie(0);
+          ^
+Main-Workspace/CAYKHE/CAYKHE.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/DEMNT/DEMNT.cpp:20:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/DORAEMON/DORAEMON.cpp:73:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/HAPPY/HAPPY.cpp:19:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/SUBPAL/subpal.cpp:21:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/dolechnn/dolechnn.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+Main-Workspace/hsgt122201/hsgt122201.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);
+              ^
+Main-Workspace/maxval/maxval.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+final/BAI1/BAI1.cpp:9:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+final/BAI1/BAI2.cpp:10:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+final/BAI1/BAI3.cpp:31:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+main.cpp:18:15: information: --check-library: There is no matching configuration for function std::ios_base::sync_with_stdio() [checkLibraryFunction]
+    ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+              ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
