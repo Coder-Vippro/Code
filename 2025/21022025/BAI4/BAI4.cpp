@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/*#include <bits/stdc++.h>
 using namespace std;
 int n;
 map<long long,int>mp;
@@ -31,4 +31,33 @@ int main()
     //for(int i:ans)
     ///cout<<i<<" ";
    // cout<<'\n'<<ans[n-1];
+}
+   */
+#include <bits/stdc++.h>
+using namespace std;
+int a[100001];
+int n;
+int tknp(int k)
+{
+    int l=0;
+    int r=999;
+    int dem=0;
+    while(l<=r)
+    {
+        dem++;
+        int mid=(l+r)/2;
+        if(a[mid]==k)return dem;
+        if(a[mid]<k)l=mid+1;
+        else r=mid-1;
+    }
+    return -1;
+}
+int main()
+{
+    int n=999;
+    for(int i=0;i<=n;i++)
+    {
+        a[i]=i;
+    }
+    cout<<tknp(999);
 }
